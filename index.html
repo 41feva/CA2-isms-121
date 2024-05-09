@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="section__pic-container">
+            <img src="./Assets/MadiLogo45nbg.png" alt="Dope ahh Logo"/>
+
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="section__pic-container">
+            <img src="./Assets/MadiLogo45nbg.png" alt="Dope ahh Logo"/>
+
+        </div>
+        <div class="hamburger-menu">
+           <div class="hamburger-icon" onclick="ToggleMenu()">
+             <span></span>
+             <span></span>
+             <span></span>
+         </div>   
+    <div class="menu-links">
+        <li><a href="#home"onclick="ToggleMenu()">Home</a></li>
+        <li><a href="#profile"onclick="ToggleMenu()">Profile</a></li>
+        <li><a href="#projects"onclick="ToggleMenu()">Projects</a></li>
+        <li><a href="#contact"onclick="ToggleMenu()">Contact</a></li>
+    </div>
+           </div>
+    </nav>
+    <section id="home">
+        <div class="section__pic-container">
+            <img src="./Assets/pfpsmile.png" alt="madi">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Chimadiagbanwe "MADI" Ogakwu</h1>
+            <p class="section__text__p2">Student @PAU</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./Assets/CV.pdf')">
+                Download CV
+                </button>
+                <button 
+                class="btn btn-color-1" 
+                onclick="location.href='./#contact'">
+                    Contact info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./Assets/instagram.png" alt="my instagram"
+                class="icon" onclick="location.href='https://www.instagram.com/_itzm4d1_/'"
+                />
+                <img src="./Assets/github.png" alt="my github"
+                class="icon" onclick="location.href='https://github.com/41feva'"
+                />
+            </div>
+        </div>
+    </section>
+    <section id="profile">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">Profile</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                src="./Assets/Profile2.png" 
+                alt="profile photo"
+                class="profile-pic"
+                />
+            </div>
+            <div class="profile-details-container">
+                <div class="profile-containers">
+                    <div class="details-container">
+                        <img 
+                        src="./Assets/medal.png" 
+                        alt="Experience icon"
+                        class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>8+ weeks <br />Full Stack Developer</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                        src="./Assets/people.png" 
+                        alt="Education icon"
+                        class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>High School Graduate <br />B.Sc. Bachelors Degree</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque libero repellat est nemo ipsam harum, illo fuga cumque impedit quisquam numquam sapiente dignissimos sunt voluptates, non aliquid? Nulla, aspernatur! Quos at, reiciendis cumque quam sapiente officiis ad, nihil enim exercitationem illo ipsam vitae consequuntur quae! Et laboriosam voluptas officia modi.  
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./Assets/down-arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#projects'"
+        />
+    </section>
+    <script src="script.js"></script>
+    
+</body>
+</html>
